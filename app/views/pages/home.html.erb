@@ -1,1 +1,11 @@
 <h1>This is my home page</h1>
+
+
+<h1>Latest Blog Post</h1>
+<% if @latest_post %>
+  <h2><%= @latest_post.title %></h2>
+  <p><%= @latest_post.content %></p>
+  <a href="<%= post_path(@latest_post) %>">Read more</a>
+<% else %>
+  <p>No posts available.</p>
+<% end %>

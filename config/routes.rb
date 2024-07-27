@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
-  # devise_for :admins
+  get 'admin_dashboard/index'
   resources :posts
-
-  # Set the root to the home action of PagesController
+  devise_for :admins
+  resources :posts
+  get 'admin_dashboard', to: 'admin_dashboard#index'
   root to: 'pages#home'
 end
