@@ -1,25 +1,28 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>TechniDesignStudios</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+<head>
+  <title>TechniDesignStudios</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
-    <%= javascript_importmap_tags %>
-  </head>
+  <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
 
-  <body>
-      <% if admin_signed_in? %>
-      <%= link_to 'Dashboard', admin_dashboard_path %>
-      <%= link_to 'Sign out', destroy_admin_session_path, method: :delete %>
-      <% end %>
+  <%= javascript_importmap_tags %>
+</head>
 
+<body>
 
-      <p class="notice"><%= notice %></p>
-      <p class="alert"><%= alert %></p>
+  <%= render 'shared/navbar' %>
 
-    <%= yield %>
-  </body>
+  <% if admin_signed_in? %>
+    <%= link_to 'Dashboard', admin_dashboard_path %>
+    <%= link_to 'Sign out', destroy_admin_session_path, method: :delete %>
+  <% end %>
+
+  <%= yield %>
+
+    <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
+</body>
 </html>

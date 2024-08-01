@@ -1,5 +1,50 @@
-<h1>This is my home page</h1>
+<div class="top-container">
 
+    <div class="container-left">
+      <h1 class="bigger-h1">Web design & graphic design is our true area of expertise</h1>
+      <p id="top-container-p">We're on a mission to make you feel awesome in web and print.</p>
+      <div class="top-section-buttons">
+        <a id="get-a-quote" href="#">Get A Quote</a>
+        <a id="view-our-work" href="#">View Our Work</a>
+      </div>
+    </div>
+    <div class="container-right">
+        <%# <h1>temp placeholder for now</h1> %>
+    </div>
+  </div>
+
+  <div class="second-container">
+
+    <div class="container-left sticky-left">
+      <h2>We strive to understand you and your goals.</h2>
+    </div>
+    <div class="container-right scrollable-right">
+        <%= image_tag 'topicon.png', alt: 'topicon', class: 'topicon' %>
+        <h4>Design</h4>
+        <p>Your identity represents your brand and what you stand for. Get it right and it can help you attract and connect
+        with your customers. Whether you are a startup or a well established brand, we can help.
+        </p>
+        <ul class="square-list">
+          <li>Branding</li>
+          <li>ATS Friendly CV</li>
+          <li>Print</li>
+          <li>Illustration</li>
+        </ul>
+        <%= image_tag 'bottomicon.png', alt: 'bottomicon', class: 'topicon' %>
+        <h4>Digital</h4>
+        <p>We design and develope websites that present your brand in the best way possible. From research and strategy, to
+        design and development, our websites are simple, reliable, user friendly and built to achieve your goals.
+        </p>
+          <ul class="square-list">
+            <li>Web design</li>
+            <li>Web development</li>
+        </ul>
+    </div>
+  </div>
+
+<br>
+<br>
+<br>
 
 <h1>Latest Blog Post</h1>
 <% if @latest_post %>

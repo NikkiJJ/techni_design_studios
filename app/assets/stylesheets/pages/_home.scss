@@ -1,1 +1,137 @@
-// Specific CSS for your home-page
+.top-container {
+  display: flex;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box; /* Include padding in width */
+  margin: 0 !important;  /* Remove default margin */
+  background-color: #000000;
+  color: #ffffff;
+  position: relative; /* Same z-index layering */
+}
+
+.bigger-h1 {
+  font-size: 55px;
+}
+
+#top-container-p {
+  padding-right: 25px;
+}
+
+/* Ensure both child containers take up 50% of the width */
+.container-left, .container-right {
+  flex: 1;
+  padding: 100px;
+  box-sizing: border-box;
+}
+
+/* Optional: add styling to buttons */
+.top-section-buttons a {
+  display: inline-block;
+  margin-right: 10px; /* Space between buttons */
+  padding: 10px 20px;
+  text-decoration: none; /* Example color */
+  color: white;
+  border-radius: 25px;
+  flex-wrap: nowrap;
+}
+
+#view-our-work {
+  border: 1px solid #ffffff;
+}
+
+#view-our-work:hover {
+  background-color: #ffffff; /* White background on hover */
+  color: #383FBF; /* Blue text color on hover */
+  border-color: #383FBF; /* Match border color to text color on hover */
+}
+
+#get-a-quote {
+  background-color: #383FBF;
+}
+
+#get-a-quote:hover {
+  background-color: #8796FB; /* Lighter shade of blue on hover */
+}
+
+.second-container {
+  display: flex;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box; /* Include padding in width */
+  margin: 0 !important;  /* Remove default margin */
+  background-color: #ffffff;
+  color: #000000;
+  position: relative; /* Same z-index layering */
+  height: 500px;
+}
+
+.topicon {
+  height: 70px;
+}
+
+.square-list {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0; /* Remove padding */
+  padding-bottom: 10px;
+  margin: 0; /* Remove margin */
+  display: flex; /* Use flexbox for layout */
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  justify-content: space-between; /* Evenly space items horizontally */
+  align-items: center; /* Center items vertically */
+  width: 100%; /* Make the list width full */
+  max-width: 400px; /* Optional: Limit the max width */
+  box-sizing: border-box; /* Include padding and border in element's total width/height */
+}
+
+.square-list li {
+  flex: 1 1 45%; /* Allow items to grow and shrink, set basis to 45% of the container */ /* Add some margin around items */
+  padding: 5px; /* Optional: Padding for items */
+  text-align: left; /* Center the text within the item */
+}
+
+.sticky-left {
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
+  top: 0; /* Adjust this value as needed to control when it sticks */
+  align-self: flex-start; /* Aligns the sticky element to the top of the container */
+}
+
+/* Make right side scrollable */
+.scrollable-right {
+  overflow-y: auto;         /* Enable vertical scrolling */
+  max-height: 100vh;        /* Limit height to viewport */
+  padding: 20px;            /* Add padding */
+  box-sizing: border-box;   /* Include padding in width */
+  -ms-overflow-style: none; /* Hide scrollbar in IE and Edge */
+  scrollbar-width: none;    /* Hide scrollbar in Firefox */
+}
+
+.scrollable-right::-webkit-scrollbar {
+  display: none; /* Hide scrollbar in Chrome, Safari, and Opera */
+}
+
+@media (max-width: 768px) {
+  .top-container {
+    flex-direction: row; /* Ensure side-by-side layout */
+    padding: 10px;
+  }
+
+  .container-left, .container-right {
+    padding: 10px;
+    flex: 1 0 50%; /* Maintain 50% width */
+    max-width: 50%; /* Ensure max width doesn't exceed 50% */
+  }
+
+  .bigger-h1 {
+    font-size: 20px;
+  }
+
+  #top-container-p {
+    padding-right: 5px;
+    font-size: 10px;
+  }
+
+  #view-our-work {
+    margin-top: 10px;
+  }
+}

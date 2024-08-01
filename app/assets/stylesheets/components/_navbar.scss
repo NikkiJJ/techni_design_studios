@@ -1,12 +1,82 @@
-.navbar-lewagon {
-  justify-content: space-between;
-  background: white;
+.navbar-custom {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+  border-bottom: 1px solid #ffffff !important;
+  margin: 0;
+  padding: 0;
+  position: relative; /* Ensure it overlays other content */
+  z-index: 1000;      /* Ensure it appears above other elements */
 }
 
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
+#nav-sig {
+  padding-left: 50px;
 }
 
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
+.nav-item {
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 17px;
+  padding-bottom: 17px;
+}
+
+.navbar-custom .navbar-brand {
+  color: #ffffff !important;
+}
+
+.navbar-custom .nav-link {
+  color: #ffffff !important;
+  position: relative;
+  text-decoration: none;
+  font-weight: 150 !important;
+}
+
+.navbar-custom .nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-in-out;
+}
+
+.navbar-custom .nav-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.navbar-custom .navbar-nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navbar-custom .nav-item {
+  margin-left: 10px;
+}
+
+@media (max-width: 992px) {
+  .navbar-custom .nav-item {
+    margin-left: 0;
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  .navbar-custom .navbar-brand {
+    margin: 0 auto;
+  }
+
+  .navbar-custom .nav-link {
+    padding: 10px 5px;
+  }
+
+  #nav-sig {
+    padding-left: 5px;
+  }
+
+  .nav-item {
+   font-size: smaller;
+  }
 }
