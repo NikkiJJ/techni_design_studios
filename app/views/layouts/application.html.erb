@@ -11,12 +11,11 @@
   </head>
 
   <body>
-    <% if admin_signed_in? %>
+      <% if admin_signed_in? %>
       <%= link_to 'Dashboard', admin_dashboard_path %>
       <%= link_to 'Sign out', destroy_admin_session_path, method: :delete %>
-    <% else %>
-      <%= link_to 'Sign in', new_admin_session_path %>
-    <% end %>
+      <% end %>
+
 
       <p class="notice"><%= notice %></p>
       <p class="alert"><%= alert %></p>
