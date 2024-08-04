@@ -45,11 +45,11 @@
   border-color: #383FBF; /* Match border color to text color on hover */
 }
 
-#get-a-quote {
+.get-a-quote {
   background-color: #383FBF;
 }
 
-#get-a-quote:hover {
+.get-a-quote:hover {
   background-color: #8796FB; /* Lighter shade of blue on hover */
 }
 
@@ -62,11 +62,12 @@
   background-color: #ffffff;
   color: #000000;
   position: relative; /* Same z-index layering */
-  height: 500px;
+  height: 600px;
 }
 
-.topicon {
+.thumbnail {
   height: 70px;
+  padding: 10px;
 }
 
 .square-list {
@@ -89,6 +90,23 @@
   text-align: left; /* Center the text within the item */
 }
 
+.third-container {
+  display: flex;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box; /* Include padding in width */
+  margin: 0 !important;  /* Remove default margin */
+  background-color: #000000;
+  color: #ffffff;
+  position: relative; /* Same z-index layering */
+  height: 600px;
+}
+
+.profile-mini {
+  height: 150px;
+  padding: 10px;
+}
+
 .sticky-left {
   position: -webkit-sticky; /* For Safari */
   position: sticky;
@@ -109,6 +127,108 @@
 .scrollable-right::-webkit-scrollbar {
   display: none; /* Hide scrollbar in Chrome, Safari, and Opera */
 }
+
+.fouth-container {
+  padding: 100px !important;
+  width: 100%;
+  padding: 50px;
+  box-sizing: border-box; /* Include padding in width */
+  margin: 0 !important;  /* Remove default margin */
+  background-color: #ffffff;
+  color: #000000;
+  position: relative; /* Same z-index layering */
+  height: 600px;
+}
+
+.portfolio-container {
+  padding-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns with equal width */
+  gap: 200px; /* Space between grid items */
+}
+
+.portfolio-wrapper {
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  width: 100%;
+}
+
+.portfolio-card {
+  height: 300px;
+  width: 500px;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.portfolio-pic {
+  height: 200px;
+  width: 100%; /* Make the image width responsive */
+  object-fit: cover; /* Ensure the image covers the entire area */
+  padding-bottom: 5px;
+}
+
+.fifth-container {
+  width: 100%;
+  padding: 100px !important;
+  box-sizing: border-box; /* Include padding in width */
+  margin: 0 !important; /* Remove default margin */
+  background-color: #000000;
+  color: #ffffff;
+  position: relative; /* Same z-index layering */
+  height: 600px;
+  overflow-x: hidden; /* Hide horizontal overflow to prevent scrollbar from always showing */
+}
+
+.review-container {
+  display: flex;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  padding-bottom: 20px; /* Add some padding to avoid scroll bar overlapping the content */
+  gap: 20px; /* Add space between cards */
+  -ms-overflow-style: none;  /* Hide scrollbar in Internet Explorer and Edge */
+  scrollbar-width: none;  /* Hide scrollbar in Firefox */
+}
+
+.review-container::-webkit-scrollbar {
+  display: none;  /* Hide scrollbar in WebKit browsers (Chrome, Safari) */
+}
+
+.review-card {
+  margin-top: 20px;
+  height: 300px;
+  width: 400px;
+  border-top: 2px solid #ffffff; /* White top border */
+  border-right: 2px solid #ffffff;
+  color: #ffffff; /* Card text color */
+  padding: 20px; /* Optional: Add padding inside the cards */
+  box-sizing: border-box; /* Include padding and border in the element's total width/height */
+  border-radius: 50px; /* Optional: Add rounded corners */
+  flex: 0 0 auto; /* Prevent flex items from shrinking */
+}
+
+.sixth-container {
+  padding: 100px !important;
+  width: 100%;
+  box-sizing: border-box; /* Include padding in width */
+  margin: 0 !important;  /* Remove default margin */
+  background-color: #ffffff;
+  color: #000000;
+  position: relative; /* Same z-index layering */
+  height: 300px;
+  display: flex; /* Use Flexbox */
+  flex-direction: column; /* Align items in a column */
+  justify-content: center; /* Center items vertically */
+  align-items: center; /* Center items horizontally */
+  text-align: center; /* Center text */
+}
+
+.contact-us-button {
+  padding: 10px 20px;
+  text-decoration: none;
+  color: white;
+  border-radius: 25px;
+  margin-top: 20px; /* Add some space between the heading and the button */
+}
+
 
 @media (max-width: 768px) {
   .top-container {

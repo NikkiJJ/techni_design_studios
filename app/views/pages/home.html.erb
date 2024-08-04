@@ -4,7 +4,7 @@
       <h1 class="bigger-h1">Web design & graphic design is our true area of expertise</h1>
       <p id="top-container-p">We're on a mission to make you feel awesome in web and print.</p>
       <div class="top-section-buttons">
-        <a id="get-a-quote" href="#">Get A Quote</a>
+        <a class="get-a-quote" href="#">Get A Quote</a>
         <a id="view-our-work" href="#">View Our Work</a>
       </div>
     </div>
@@ -19,7 +19,7 @@
       <h2>We strive to understand you and your goals.</h2>
     </div>
     <div class="container-right scrollable-right">
-        <%= image_tag 'topicon.png', alt: 'topicon', class: 'topicon' %>
+        <%= image_tag 'topicon.png', alt: 'topicon', class: 'thumbnail' %>
         <h4>Design</h4>
         <p>Your identity represents your brand and what you stand for. Get it right and it can help you attract and connect
         with your customers. Whether you are a startup or a well established brand, we can help.
@@ -30,7 +30,7 @@
           <li>Print</li>
           <li>Illustration</li>
         </ul>
-        <%= image_tag 'bottomicon.png', alt: 'bottomicon', class: 'topicon' %>
+        <%= image_tag 'bottomicon.png', alt: 'bottomicon', class: 'thumbnail' %>
         <h4>Digital</h4>
         <p>We design and develope websites that present your brand in the best way possible. From research and strategy, to
         design and development, our websites are simple, reliable, user friendly and built to achieve your goals.
@@ -42,15 +42,94 @@
     </div>
   </div>
 
-<br>
-<br>
-<br>
+  <div class="third-container">
+    <div class="container-left sticky-left">
+      <h1>we're a compact team with diverse talents.</h1>
+    </div>
+    <div class="container-left scrollable-right">
+      <%= image_tag 'nikki.png', alt: 'avatar', class: 'profile-mini' %>
+      <h4>Nikki</h4>
+      <p>Some interesiting information about Nikki. Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah
+      Blah Blah Blah Blah Blah Blah Blah Blah Blah
+      </p>
+       <%= image_tag 'amy.jpg', alt: 'avatar', class: 'profile-mini' %>
+      <h4>Amy</h4>
+      <p>Some interesiting information about Amy. Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah
+      Blah Blah Blah Blah Blah Blah Blah Blah Blah
+      </p>
+    </div>
+  </div>
 
-<h1>Latest Blog Post</h1>
-<% if @latest_post %>
-  <h2><%= @latest_post.title %></h2>
-  <p><%= @latest_post.content %></p>
-  <a href="<%= post_path(@latest_post) %>">Read more</a>
-<% else %>
-  <p>No posts available.</p>
-<% end %>
+  <div class="fouth-container scrollable-right">
+    <h1>Designs that <br> Define Us</h1>
+      <div class="portfolio-wrapper">
+        <div class="portfolio-container">
+          <div class="portfolio-card">
+            <%= image_tag 'portspin.png', alt: 'portfolio pic', class: 'portfolio-pic' %>
+            <h4>Portfolio & CV</h4>
+            <p>Web Design & Development CV design</p>
+          </div>
+          <div class="portfolio-card">
+            <%= image_tag 'portdanny.png', alt: 'portfolio pic', class: 'portfolio-pic' %>
+            <h4>Portfolio & CV</h4>
+            <p>Web Design & Development CV design</p>
+          </div>
+          <div class="portfolio-card">
+            <%= image_tag 'portwater.png', alt: 'portfolio pic', class: 'portfolio-pic' %>
+            <h4>Portfolio & CV</h4>
+            <p>Web Design & Development CV design</p>
+          </div>
+          <div class="portfolio-card">
+            <%= image_tag 'portboat.png', alt: 'portfolio pic', class: 'portfolio-pic' %>
+            <h4>Portfolio & CV</h4>
+            <p>Web Design & Development CV design</p>
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <div class="fifth-container">
+    <h2>Loved <br> & Trusted</h2>
+      <div class="review-container">
+        <div class="review-card">
+          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"</p>
+          <p>Person Name</p>
+          <p>Project Name</p>
+        </div>
+        <div class="review-card">
+          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"</p>
+          <p>Person Name</p>
+          <p>Project Name</p>
+        </div>     <div class="review-card">
+          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"</p>
+          <p>Person Name</p>
+          <p>Project Name</p>
+        </div>
+        <div class="review-card">
+          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"</p>
+          <p>Person Name</p>
+          <p>Project Name</p>
+        </div>
+        <div class="review-card">
+          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"</p>
+          <p>Person Name</p>
+          <p>Project Name</p>
+        </div>
+        <div class="review-card">
+          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"</p>
+          <p>Person Name</p>
+          <p>Project Name</p>
+        </div>
+      </div>
+  </div>
+
+  <div class="sixth-container">
+    <h2>Have a project in mind? Get in touch.</h2>
+    <a class="get-a-quote contact-us-button" href="#">Contact Us</a>
+  </div>
