@@ -4,11 +4,16 @@
   border-bottom: 1px solid #ffffff !important;
   margin: 0;
   padding: 0;
-  position: relative; /* Ensure it overlays other content */
-  z-index: 1000;      /* Ensure it appears above other elements */
+  position: relative;
+  z-index: 1000;
 }
 
 #nav-sig {
+  padding-left: 5px;
+}
+
+.techni-little-logo {
+  height: 50px;
   padding-left: 50px;
 }
 
@@ -57,26 +62,38 @@
   margin-left: 10px;
 }
 
-@media (max-width: 992px) {
-  .navbar-custom .nav-item {
-    margin-left: 0;
-    padding: 10px 0;
-    text-align: center;
-  }
-
-  .navbar-custom .navbar-brand {
-    margin: 0 auto;
-  }
-
-  .navbar-custom .nav-link {
-    padding: 10px 5px;
+@media only screen and (max-width: 375px) {
+  .navbar-custom .container-fluid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 
   #nav-sig {
-    padding-left: 5px;
+    padding: 0 !important;
+    font-size: 1.5rem; /* Adjust font size if necessary */
+    margin-right: auto; /* Align the brand to the left */
+  }
+
+  .navbar-nav {
+    display: flex;
+    justify-content: flex-end;
+    width: auto; /* Adjust width */
   }
 
   .nav-item {
-   font-size: smaller;
+    padding: 0 10px !important; /* Reduce padding for mobile */
+  }
+
+  .navbar-custom .navbar-brand {
+    padding-left: 10px; /* Adjust padding to align with other elements */
+  }
+
+  .navbar-custom .navbar-nav {
+    margin-right: 10px; /* Align nav links with the brand */
+  }
+
+  .techni-little-logo {
+    padding-left: 5px;
   }
 }

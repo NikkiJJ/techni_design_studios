@@ -1,8 +1,13 @@
-body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  background-color: #ffffff;
+html, body {
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  width: 100%; /* Ensure the body width matches the viewport width */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+/* Ensure no elements are causing overflow */
+* {
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
 
 .top-container {
@@ -260,5 +265,46 @@ body {
 
   #view-our-work {
     margin-top: 10px;
+    text-align: center;
   }
+
+  .fouth-container {
+    padding: 30px !important; /* Add a bit more padding */
+    height: auto; /* Allow the container height to adjust to content */
+  }
+
+  .portfolio-container {
+    grid-template-columns: 1fr; /* Single column layout */
+    gap: 40px; /* Increase the gap between items */
+  }
+
+  .portfolio-card {
+    height: 250px; /* Slightly larger card height */
+    width: 100%; /* Full width of the container */
+    padding: 20px; /* Add more padding inside the cards */
+    margin-bottom: 20px; /* Add space between the cards and their container */
+  }
+
+  .portfolio-wrapper {
+    width: 100%; /* Ensure the wrapper takes full width */
+  }
+
+  h1 {
+    margin-bottom: 30px; /* Add space between the heading and the portfolio items */
+  }
+
+  .fifth-container {
+    padding: 50px 20px !important; /* Reduce padding for smaller screens */
+    height: auto; /* Adjust height to content */
+  }
+
+  .review-card {
+    height: 250px; /* Slightly smaller height on smaller screens */
+    width: 350px; /* Slightly smaller width on smaller screens */
+  }
+
+  .review-container {
+    padding-bottom: 10px; /* Reduce bottom padding */
+  }
+
 }

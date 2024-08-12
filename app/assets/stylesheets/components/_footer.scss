@@ -41,3 +41,40 @@
 .footer-item {
   padding-left: 50px;
 }
+
+@media only screen and (max-width: 768px) {
+  .top-footer {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center elements */
+    height: auto; /* Let height adjust to content */
+    padding: 20px 0; /* Add some vertical padding */
+  }
+
+  .techni-logo {
+    height: 150px; /* Reduce logo size */
+    padding: 20px 0; /* Reduce padding around the logo */
+  }
+
+  .list-container {
+    flex-direction: column; /* Stack the lists vertically */
+    align-items: center; /* Center the lists */
+    width: 100%; /* Ensure the container takes full width */
+    padding: 0 20px; /* Add horizontal padding */
+  }
+
+  .footer-lists {
+    padding: 20px 0; /* Reduce padding around lists */
+    text-align: center; /* Center-align the text */
+  }
+
+  .bottom-footer {
+    flex-direction: column; /* Stack footer items vertically */
+    align-items: center; /* Center the footer items */
+    padding: 20px 0; /* Reduce padding */
+  }
+
+  .footer-item {
+    padding-left: 0; /* Remove left padding */
+    margin-bottom: 10px; /* Add some space between items */
+  }
+}
