@@ -10,6 +10,25 @@ html, body {
   box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
 
+.sign_in {
+  width: 100%;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.sign-in-button {
+  text-decoration: none; /* Removes the underline */
+  color: #383FBF; /* Sets the initial link color */
+}
+
+.sign-in-button:visited {
+  color: #383FBF; /* Removes the royal blue color after being clicked */
+}
+
+.sign-in-button:hover {
+  color: #ffffff; /* Changes the color to purple on hover */
+}
+
 .top-container {
   display: flex;
   width: 100%;

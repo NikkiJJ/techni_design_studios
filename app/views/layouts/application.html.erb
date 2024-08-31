@@ -15,10 +15,13 @@
 
   <%= render 'shared/navbar' %>
 
+<div class="sign_in">
   <% if admin_signed_in? %>
-    <%= link_to 'Dashboard', admin_dashboard_path %>
-    <%= link_to 'Sign out', destroy_admin_session_path, method: :delete %>
+    <%= link_to 'Dashboard', admin_dashboard_path, class: 'sign-in-button' %>
+    <%= link_to 'Sign out', destroy_admin_session_path, method: :delete, class: 'sign-in-button' %>
   <% end %>
+</div>
+
 
   <%= yield %>
 

@@ -1,6 +1,8 @@
   <nav class="navbar navbar-expand-lg navbar-custom">
     <div class="container-fluid d-flex align-items-center">
-        <%= image_tag 'logo.png', alt: 'logo', class: 'techni-little-logo' %>
+        <%= link_to root_path do %>
+           <%= image_tag 'logo.png', alt: 'logo', class: 'techni-little-logo' %>
+        <% end %>
         <h1 id="nav-sig" class="navbar-brand mb-0">techni</h1>
         <ul class="navbar-nav ms-auto d-flex flex-row">
             <li class="nav-item">

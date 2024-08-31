@@ -1,6 +1,12 @@
-<%= link_to 'Home', root_path %>
-
-<h1>Admins Dashboard</h1>
+<div class="admin-top">
+  <div class="admin-top-left">
+    <%= image_tag 'admindash.jpg', alt: 'Cover photo for admin dashboard', class: 'dash-image' %>
+  </div>
+  <div class="admin-top-right">
+    <h1>Amy & Nikki's Dashboard</h1>
+    <%= link_to 'New Post', new_post_path, class: 'new-post-button' %>
+  </div>
+</div>
 
 
 <%= link_to 'New Post', new_post_path %>
