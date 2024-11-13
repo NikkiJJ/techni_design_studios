@@ -1,14 +1,15 @@
 <div class="top-container">
 
-    <div class="container-left">
-      <h1 class="bigger-h1">Web design & graphic design is our true area of expertise</h1>
+    <div class="top-container-left">
+      <p>/WE ARE TECHNI</p>
+      <h1 class="bigger-h1">Web design & <br> graphic design is our <br> area of expertise</h1>
       <p id="top-container-p">We're on a mission to make you feel awesome in web and print.</p>
       <div class="top-section-buttons">
         <a class="get-a-quote" href="#">Get A Quote</a>
         <a id="view-our-work" href="#">View Our Work</a>
       </div>
     </div>
-    <div class="container-right">
+    <div class="top-container-right">
         <%# <h1>temp placeholder for now</h1> %>
     </div>
   </div>
@@ -16,7 +17,7 @@
   <div class="second-container">
 
     <div class="container-left sticky-left">
-      <h2>We strive to understand you and your goals.</h2>
+      <h2 class="bigger-h2">We strive to understand <br> you and your goals.</h2>
     </div>
     <div class="container-right scrollable-right">
         <%= image_tag 'topicon.png', alt: 'topicon', class: 'thumbnail' %>
@@ -44,45 +45,55 @@
 
   <div class="third-container">
     <div class="container-left sticky-left">
-      <h1>we're a compact team with diverse talents.</h1>
+      <h2 class="bigger-h2">we're a compact team <br> with diverse talents.</h2>
     </div>
-    <div class="container-left scrollable-right">
+    <div class="container-right scrollable-right">
       <%= image_tag 'nikki.png', alt: 'avatar', class: 'profile-mini' %>
       <h4>Nikki</h4>
-      <p>Some interesiting information about Nikki. Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah
-      Blah Blah Blah Blah Blah Blah Blah Blah Blah
+      <p>Nikki is a skilled developer with a nack for turning complex concepts into seamless digital solutions. With a deep
+      understanding of web technologies and a commitment to functionality, she brings projects to life with clean, efficient code.
+      Nikki's expertise ensures that every design performs flawlessly, delivering a user experience that's both intuitive and
+      robust. Her approach combines technical precision with a thoughtful, client-focussed process.
       </p>
-       <%= image_tag 'amy.jpg', alt: 'avatar', class: 'profile-mini' %>
+       <%= image_tag 'amy.png', alt: 'avatar', class: 'profile-mini' %>
       <h4>Amy</h4>
-      <p>Some interesiting information about Amy. Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah
-      Blah Blah Blah Blah Blah Blah Blah Blah Blah
+      <p>An experienced designer with a passion for creating user-centered digital experiences, Amy brings a unique blend
+      of creativity and technical precision to every project. Known for her eye for detail and commitment to quality, Amy
+      specialises in specialises in building visually compelling, intuitive designs that elevate brands and engage audiences.
+      From brand identity to responsive web design, Amy is dedicated to transforming ideas into polished, impactful visuals
+      tailored to each client's needs.
       </p>
     </div>
   </div>
 
+    <%= image_tag 'cover-print.png', alt: 'Descriptive alt text', class: 'cover-print' %>
+
   <div class="fouth-container scrollable-right">
-    <h1>Designs that <br> Define Us</h1>
       <div class="portfolio-wrapper">
+        <h1>Designs that define us</h1>
         <div class="portfolio-container">
           <div class="portfolio-card">
-            <%= image_tag 'portspin.png', alt: 'portfolio pic', class: 'portfolio-pic' %>
-            <h4>Portfolio & CV</h4>
-            <p>Web Design & Development CV design</p>
+            <%= image_tag 'portfolio-website.png', alt: 'portfolio pic', class: 'portfolio-pic' %>
+            <h4>Portfolio Website</h4>
+            <p>Online Portfolio Up To 5 Pages</p>
+            <p>Optional Customn CV Design</p>
           </div>
           <div class="portfolio-card">
-            <%= image_tag 'portdanny.png', alt: 'portfolio pic', class: 'portfolio-pic' %>
-            <h4>Portfolio & CV</h4>
-            <p>Web Design & Development CV design</p>
+            <%= image_tag 'web-design.png', alt: 'portfolio pic', class: 'portfolio-pic' %>
+            <h4>Website Design & Development</h4>
+            <p>Web Design & Development</p>
+            <p>Basic On Site SEO</p>
           </div>
           <div class="portfolio-card">
-            <%= image_tag 'portwater.png', alt: 'portfolio pic', class: 'portfolio-pic' %>
-            <h4>Portfolio & CV</h4>
-            <p>Web Design & Development CV design</p>
+            <%= image_tag 'premade-temp.png', alt: 'portfolio pic', class: 'portfolio-pic' %>
+            <h4>Premade Template</h4>
+            <p>We have a small selection of templates which are perfect if you are <br> in a hurry to get going</p>
           </div>
           <div class="portfolio-card">
-            <%= image_tag 'portboat.png', alt: 'portfolio pic', class: 'portfolio-pic' %>
-            <h4>Portfolio & CV</h4>
-            <p>Web Design & Development CV design</p>
+            <%= image_tag 'cv-portfolio.png', alt: 'portfolio pic', class: 'portfolio-pic' %>
+            <h4>CV & Portfolio</h4>
+            <p>One Page Website</p>
+            <p>Downloadable Custom CV Design</p>
           </div>
         </div>
       </div>

@@ -33,6 +33,7 @@ html, body {
   display: flex;
   width: 100%;
   padding: 20px;
+  padding-top: 50px;
   box-sizing: border-box; /* Include padding in width */
   margin: 0 !important;  /* Remove default margin */
   background-color: #000000;
@@ -41,18 +42,38 @@ html, body {
 }
 
 .bigger-h1 {
-  font-size: 55px;
+  font-size: 65px;
+  font-weight: bold;
+}
+
+.bigger-h2 {
+  font-size: 60px;
 }
 
 #top-container-p {
   padding-right: 25px;
 }
 
-/* Ensure both child containers take up 50% of the width */
+.top-container-left {
+  flex: 3; /* 60% */
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.top-container-right {
+  flex: 2; /* 40% */
+  padding: 40px;
+  box-sizing: border-box;
+}
+
 .container-left, .container-right {
   flex: 1;
-  padding: 100px;
+  padding: 40px;
   box-sizing: border-box;
+}
+
+.top-section-buttons {
+  padding-top: 70px;
 }
 
 /* Optional: add styling to buttons */
@@ -77,7 +98,8 @@ html, body {
 }
 
 .get-a-quote {
-  background-color: #383FBF;
+  background-color: white;
+  color: black !important;
 }
 
 .get-a-quote:hover {
@@ -85,15 +107,22 @@ html, body {
 }
 
 .second-container {
+  padding-top: 150px !important;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+  padding-bottom: 20px !important;
   display: flex;
   width: 100%;
-  padding: 20px;
-  box-sizing: border-box; /* Include padding in width */
+  padding: 20px;box-sizing: border-box; /* Include padding in width */
   margin: 0 !important;  /* Remove default margin */
   background-color: #ffffff;
   color: #000000;
   position: relative; /* Same z-index layering */
   height: 600px;
+}
+
+.sticky-left {
+  white-space: nowrap;
 }
 
 .thumbnail {
@@ -113,6 +142,7 @@ html, body {
   width: 100%; /* Make the list width full */
   max-width: 400px; /* Optional: Limit the max width */
   box-sizing: border-box; /* Include padding and border in element's total width/height */
+  gap: 40px;
 }
 
 .square-list li {
@@ -122,6 +152,10 @@ html, body {
 }
 
 .third-container {
+  padding-top: 150px !important;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+  padding-bottom: 20px !important;
   display: flex;
   width: 100%;
   padding: 20px;
@@ -134,7 +168,7 @@ html, body {
 }
 
 .profile-mini {
-  height: 150px;
+  height: 250px;
   padding: 10px;
 }
 
@@ -159,6 +193,10 @@ html, body {
   display: none; /* Hide scrollbar in Chrome, Safari, and Opera */
 }
 
+.cover-print {
+  width: 100%;
+}
+
 .fouth-container {
   padding: 100px !important;
   width: 100%;
@@ -175,27 +213,37 @@ html, body {
   padding-top: 40px;
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* Two columns with equal width */
-  gap: 200px; /* Space between grid items */
+  gap: 150px; /* Space between grid items */
 }
 
 .portfolio-wrapper {
   display: flex;
-  justify-content: center; /* Center the content horizontally */
+  flex-direction: column; /* Stack items vertically */
+  justify-content: center; /* Center the content vertically */
+  align-items: center; /* Center the content horizontally */
   width: 100%;
 }
 
+.portfolio-wrapper h1 {
+  align-self: flex-start; /* Aligns the h1 to the start (left) within the flex container */
+  margin-bottom: 20px; /* Optional: add space between the h1 and the next element */
+  padding-left: 30px;
+}
+
+
 .portfolio-card {
-  height: 300px;
+  height: 400px;
   width: 500px;
   box-sizing: border-box;
   padding: 10px;
+  margin-bottom: 15px;
 }
 
 .portfolio-pic {
-  height: 200px;
+  height: 350px;
   width: 100%; /* Make the image width responsive */
   object-fit: cover; /* Ensure the image covers the entire area */
-  padding-bottom: 5px;
+  padding-bottom: 15px;
 }
 
 .fifth-container {
