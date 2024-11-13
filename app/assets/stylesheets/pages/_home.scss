@@ -284,22 +284,50 @@ html, body {
   flex: 0 0 auto; /* Prevent flex items from shrinking */
 }
 
-.sixth-container {
-  padding: 100px !important;
-  width: 100%;
-  box-sizing: border-box; /* Include padding in width */
-  margin: 0 !important;  /* Remove default margin */
-  background-color: #ffffff;
-  color: #000000;
-  position: relative; /* Same z-index layering */
-  height: 300px;
-  display: flex; /* Use Flexbox */
-  flex-direction: column; /* Align items in a column */
-  justify-content: center; /* Center items vertically */
-  align-items: center; /* Center items horizontally */
-  text-align: center; /* Center text */
+.project-callout {
+  font-size: 80px; /* Large text size */
+  font-weight: bold;
+  color: black;
+  white-space: nowrap; /* Prevents text wrapping */
+  overflow: hidden; /* Hides overflow for the sliding effect */
+  width: 100vw; /* Full-width across the screen */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+.main-text {
+  color: black; /* Black for the main text */
+}
+
+.reveal-text {
+  color: white;
+  text-shadow:
+    -2px 0 black,  /* Left shadow */
+    2px 0 black,   /* Right shadow */
+    0 -2px black,  /* Top shadow */
+    0 2px black;   /* Bottom shadow */
+  margin-left: 10px;
+  transform: translateX(100%);
+  transition: transform 0.5s ease;
+}
+
+
+.project-callout:hover .reveal-text {
+  transform: translateX(0); /* Slide into view on hover */
+}
+
+.center-wrapper {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+}
+
+.get-in-touch {
+  background-color: black;
+  color: white !important;
+  padding: 10px 20px;
+  border-radius: 25px;
+}
 .contact-us-button {
   padding: 10px 20px;
   text-decoration: none;
