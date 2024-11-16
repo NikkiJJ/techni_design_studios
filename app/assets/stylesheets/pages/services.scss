@@ -1,0 +1,34 @@
+.services-top {
+  background-color: black;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 200px;
+}
+
+.services-top h1,
+.services-top p {
+  color: $light-gray;
+  text-align: left;
+  padding: 10px;
+}
+
+.services-top-text {
+  display: flex;
+  text-align: left;
+}
+
+.services-second {
+  background: $light-gray;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.services-cover {
+  width: 1211px;
+  height: 688px;
+}

@@ -311,7 +311,7 @@ html, body {
 }
 
 .reveal-text {
-  color: $light-gray;
+  color: $light-gray !important;
   text-shadow:
     -2px 0 black,  /* Left shadow */
     2px 0 black,   /* Right shadow */
@@ -337,6 +337,7 @@ html, body {
   color: $light-gray !important;
   padding: 10px 20px;
   border-radius: 25px;
+  text-decoration: none;
 }
 .contact-us-button {
   padding: 10px 20px;
