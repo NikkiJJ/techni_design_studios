@@ -3,6 +3,7 @@ html, body {
   width: 100%; /* Ensure the body width matches the viewport width */
   margin: 0; /* Remove default margin */
   padding: 0; /* Remove default padding */
+  background-color: $med-gray;
 }
 
 /* Ensure no elements are causing overflow */
@@ -37,8 +38,12 @@ html, body {
   box-sizing: border-box; /* Include padding in width */
   margin: 0 !important;  /* Remove default margin */
   background-color: #000000;
-  color: #ffffff;
   position: relative; /* Same z-index layering */
+}
+
+.top-container h1,
+.top-container p {
+  color: $light-gray;
 }
 
 .bigger-h1 {
@@ -88,22 +93,22 @@ html, body {
 }
 
 #view-our-work {
-  border: 1px solid #ffffff;
+  border: 1px solid $light-gray;
 }
 
 #view-our-work:hover {
-  background-color: #ffffff; /* White background on hover */
-  color: #383FBF; /* Blue text color on hover */
-  border-color: #383FBF; /* Match border color to text color on hover */
+  background-color: $light-gray;
+  color: $prim-purple;
+  border-color: $prim-purple;
 }
 
 .get-a-quote {
-  background-color: white;
+  background-color: $light-gray;
   color: black !important;
 }
 
 .get-a-quote:hover {
-  background-color: #8796FB; /* Lighter shade of blue on hover */
+  background-color: $sec-blue;
 }
 
 .second-container {
@@ -113,12 +118,12 @@ html, body {
   padding-bottom: 20px !important;
   display: flex;
   width: 100%;
-  padding: 20px;box-sizing: border-box; /* Include padding in width */
-  margin: 0 !important;  /* Remove default margin */
-  background-color: #ffffff;
+  padding: 20px;box-sizing: border-box;
+  margin: 0 !important;
   color: #000000;
-  position: relative; /* Same z-index layering */
+  position: relative;
   height: 600px;
+  background-color: $med-gray;
 }
 
 .sticky-left {
@@ -162,7 +167,7 @@ html, body {
   box-sizing: border-box; /* Include padding in width */
   margin: 0 !important;  /* Remove default margin */
   background-color: #000000;
-  color: #ffffff;
+  color: $light-gray;
   position: relative; /* Same z-index layering */
   height: 600px;
 }
@@ -203,10 +208,10 @@ html, body {
   padding: 50px;
   box-sizing: border-box; /* Include padding in width */
   margin: 0 !important;  /* Remove default margin */
-  background-color: #ffffff;
   color: #000000;
   position: relative; /* Same z-index layering */
   height: 600px;
+  background-color: $med-gray;
 }
 
 .portfolio-container {
@@ -252,7 +257,7 @@ html, body {
   box-sizing: border-box; /* Include padding in width */
   margin: 0 !important; /* Remove default margin */
   background-color: #000000;
-  color: #ffffff;
+  color: $light-gray;
   position: relative; /* Same z-index layering */
   height: 600px;
   overflow-x: hidden; /* Hide horizontal overflow to prevent scrollbar from always showing */
@@ -275,13 +280,18 @@ html, body {
   margin-top: 20px;
   height: 300px;
   width: 400px;
-  border-top: 2px solid #ffffff; /* White top border */
-  border-right: 2px solid #ffffff;
-  color: #ffffff; /* Card text color */
+  border-top: 2px solid $light-gray; /* White top border */
+  border-right: 2px solid $light-gray;
+  color: $light-gray; /* Card text color */
   padding: 20px; /* Optional: Add padding inside the cards */
   box-sizing: border-box; /* Include padding and border in the element's total width/height */
   border-radius: 50px; /* Optional: Add rounded corners */
   flex: 0 0 auto; /* Prevent flex items from shrinking */
+}
+
+.bottom-container {
+  background-color: $med-gray;
+  margin: 0px;
 }
 
 .project-callout {
@@ -301,7 +311,7 @@ html, body {
 }
 
 .reveal-text {
-  color: white;
+  color: $light-gray;
   text-shadow:
     -2px 0 black,  /* Left shadow */
     2px 0 black,   /* Right shadow */
@@ -324,14 +334,14 @@ html, body {
 
 .get-in-touch {
   background-color: black;
-  color: white !important;
+  color: $light-gray !important;
   padding: 10px 20px;
   border-radius: 25px;
 }
 .contact-us-button {
   padding: 10px 20px;
   text-decoration: none;
-  color: white;
+  color: $light-gray;
   border-radius: 25px;
   margin-top: 20px; /* Add some space between the heading and the button */
 }
