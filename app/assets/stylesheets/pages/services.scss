@@ -32,3 +32,113 @@
   width: 1211px;
   height: 688px;
 }
+
+.services-third {
+  background-color: black;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.title-text {
+  display: flex;
+  color: $light-gray;
+}
+
+.services-third-left {
+  width: 60%;
+}
+
+.services-third-right {
+  width: 40%;
+}
+
+.servicies-third-layout p {
+  padding: 20px;
+  width: 100%;
+  color: $light-gray !important;
+}
+
+.services-accordian {
+  margin-top: 50px;
+}
+
+.accordion-container {
+  width: 100%;
+  margin: auto;
+  background-color: black;
+  color: $light-gray;
+}
+
+.accordion-item {
+  border-top: 1px solid $light-gray;
+  border-bottom: 1px solid $light-gray;
+}
+
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  cursor: pointer;
+}
+
+.accordion-header .heading {
+  text-align: left;
+  font-size: larger;
+}
+
+.accordion-header .plus {
+  font-weight: bold;
+}
+
+.accordion-content {
+  display: none;
+  padding: 10px 20px;
+  list-style: disc;
+  margin-left: 20px;
+}
+
+.accordion-content.active {
+  display: block;
+}
+
+.services-fourth {
+  background-color: $med-gray;
+  width: 100%;
+}
+
+.services-placeholder {
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: $med-gray;
+}
+
+.services-fifth {
+  background-color: black;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.title-text {
+  display: flex;
+  color: $light-gray;
+}
+
+.services-fifth-left {
+  width: 60%;
+}
+
+.services-fifth-right {
+  width: 40%;
+}
+
+.servicies-fifth-layout p {
+  padding: 20px;
+  width: 100%;
+  color: $light-gray !important;
+}
