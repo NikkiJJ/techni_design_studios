@@ -6,4 +6,5 @@ Rails.application.routes.draw do
   get 'admin_dashboard', to: 'admin_dashboard#index'
   root to: 'pages#home'
   get 'services', to: 'pages#services'
+  get 'meet', to: 'pages#meet'
 end

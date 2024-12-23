@@ -1,0 +1,25 @@
+.meet-top {
+  background-color: black;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 200px;
+}
+
+.meet-top h1,
+.meet-top p {
+  color: $light-gray;
+  text-align: left;
+  padding: 10px;
+}
+
+.meet-top-text {
+  display: flex;
+  text-align: left;
+}
+
+.meet-top-text p {
+  padding-right: 20px;
+}
