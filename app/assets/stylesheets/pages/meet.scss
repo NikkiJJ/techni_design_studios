@@ -23,3 +23,37 @@
 .meet-top-text p {
   padding-right: 20px;
 }
+
+.meet-second {
+  width: 100%;
+  background-color: $med-gray;
+  height: 800px;
+}
+
+.meet-amy-nikki {
+  display: flex;
+  background-color: black;
+}
+
+.meet-left {
+  width: 50%;
+  color: $light-gray;
+  padding-top: 100px;
+  padding-left: 200px;
+  padding-right: 50px;
+  padding-bottom: 100px
+}
+
+.meet-right {
+  width: 50%;
+  padding: 100px;
+  color: $light-gray;
+}
+
+.meet-profile {
+  height: 500px;
+}
+
+.meet-strip {
+  width: 100%;
+}
