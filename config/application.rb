@@ -15,6 +15,8 @@ module TechniDesignStudios
       generate.test_framework :test_unit, fixture: false
     end
 
+    # Enable the asset pipeline
+    config.assets.enabled = true
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 7.1
 

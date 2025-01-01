@@ -6,16 +6,3 @@ import "controllers"
 import "@popperjs/core"
 import "bootstrap"
 import "./stimulus-loading";
-
-
-
-document.addEventListener("DOMContentLoaded", function () {
-  const toggler = document.querySelector(".navbar-toggler");
-  const bannerMenu = document.querySelector(".banner-menu");
-
-  if (toggler && bannerMenu) {
-    toggler.addEventListener("click", function () {
-      bannerMenu.classList.toggle("show");
-    });
-  }
-});
