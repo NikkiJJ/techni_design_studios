@@ -1,4 +1,4 @@
-<nav class="navbar navbar-custom" data-controller="navbar">
+<nav class="navbar navbar-custom">
   <div class="container-fluid d-flex align-items-center">
     <!-- Logo -->
     <%= link_to root_path do %>
@@ -9,7 +9,8 @@
     <button
       class="navbar-toggler"
       type="button"
-      data-action="navbar#toggle"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
       aria-controls="navbarNav"
       aria-expanded="false"
       aria-label="Toggle navigation"
@@ -18,25 +19,21 @@
     </button>
 
     <!-- Collapsible Menu -->
-    <div class="collapse banner-menu" id="navbarNav" data-navbar-target="menu">
-      <div class="banner-content">
-        <div class="banner-menu-items">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link custom-nav-link" href="<%= services_path %>">SERVICES</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link custom-nav-link" href="<%= meet_path %>">MEET THE TEAM</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link custom-nav-link" href="<%= contact_path %>">CONTACT US</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link custom-nav-link" href="#contact">CONTACT</a>
-            </li>
-          </ul>
-        </div>
-      </div>
+    <div class="collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link custom-nav-link" href="<%= services_path %>">SERVICES</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link custom-nav-link" href="<%= meet_path %>">MEET THE TEAM</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link custom-nav-link" href="<%= contact_path %>">CONTACT US</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link custom-nav-link" href="#contact">CONTACT</a>
+        </li>
+      </ul>
     </div>
   </div>
 </nav>
